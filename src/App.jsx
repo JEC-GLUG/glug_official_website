@@ -1,11 +1,18 @@
-
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
 
     return (
-        <div>
-            App
-        </div>
+        <BrowserRouter>
+            <div className="relative z-0 bg-primary">
+                <div className="bg-black bg-cover bg-no-repeat bg-center">
+                    <Navbar />
+                    <Hero />
+                </div>
+            </div>
+        </BrowserRouter>
     )
 }
 
