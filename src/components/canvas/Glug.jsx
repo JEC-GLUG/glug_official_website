@@ -26,7 +26,7 @@ const Glug = ({ isMobile }) => {
       />
       <primitive
         object={logo.scene}
-        scale={isMobile ? 40 : 50}
+        scale={isMobile ? 30 : 40}
         position={isMobile ? [0, -3, -2.2] : [0, 0, -1.5]}
         rotation={[0, 0, 0]}
       />

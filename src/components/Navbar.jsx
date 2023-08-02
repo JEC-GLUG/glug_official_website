@@ -12,7 +12,8 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20`}
+            style={{ fontFamily: "'Russo One', sans-serif" }}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
                 <Link
@@ -23,7 +24,7 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <p className="text-white text-[18px] font-bold cursor-pointer">GLUG</p>
+                    <p className="text-white text-[18px] font-bold cursor-pointer" style={{fontSize:"1.5rem"}}>G<span style={{ color: "#1B9FDC" }}>L</span>UG</p>
                 </Link>
 
                 <ul className="list-none hidden sm:flex flex-row gap-10">
