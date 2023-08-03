@@ -69,7 +69,7 @@ const GlugCanvas = () => {
     }, []);
 
     return (
-        <div className={`w-full h-full ${ isDragging ? "cursor-grabbing" : "cursor-grab"}`} onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+        <div className={`w-full h-full ${ isDragging ? "cursor-grabbing" : "cursor-grab"}`} onPointerDown={handleMouseDown} onPointerUp={handleMouseUp} onMouseLeave={handleMouseUp}>
             <Canvas
                 id="glug-logo"
                 frameloop="demand"

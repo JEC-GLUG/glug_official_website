@@ -13,11 +13,11 @@ const Hero = () => {
                 {/* <!-----------------  LEFT COLUMN  -----------------> */}
                 <div class={`w-full md:w-1/2 flex flex-col justify-center`}>
                     <div className="font-body text-white mx-auto max-w-2xl">
-                        <h1 className="text-4xl sm:text-6xl font-semibold mb-4 md:text-start text-center">
+                        <h1 className="text-4xl md:text-6xl font-semibold mb-4 md:text-start text-center">
                             What is G<span className="text-glugBlue">l</span>
                             ug?
                         </h1>
-                        <p className="text-[0.9rem] sm:text-[1rem] md:text-lg md:text-start text-justify">
+                        <p className="text-[0.9rem] md:text-lg md:text-start text-justify">
                             Glug is a cool technology! Lorem Ipsum is simply
                             dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy
@@ -35,14 +35,14 @@ const Hero = () => {
                 </div>
 
                 {/* <!-----------------  RIGHT COLUMN  -----------------> */}
-                <div class="w-full md:w-1/2 flex flex-col justify-center pl-[16rem]">
+                <div class="w-full md:w-1/2 flex flex-col justify-center md:pl-[16rem]">
                     <div class="w-full h-full">
                         <GlugCanvas />
                     </div>
                 </div>
             </div>
             {/* <!-----------------  Scroll Animation -----------------> */}
-            <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+            <div className="absolute xs:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">
                 <a href="#">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-glugBlue border-opacity-75 flex justify-center items-start p-2">
                         <motion.div

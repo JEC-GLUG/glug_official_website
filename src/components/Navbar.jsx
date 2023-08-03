@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
+import { menu, close, glugLogo } from "../assets";
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20`}
+            className={`${styles.paddingX} w-full flex items-center py-8 fixed top-0 z-20`}
             style={{ fontFamily: "'Russo One', sans-serif" }}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -24,10 +24,11 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <p className="text-white text-[18px] font-bold cursor-pointer" style={{fontSize:"1.5rem"}}>G<span style={{ color: "#1B9FDC" }}>L</span>UG</p>
+                    {/* <p className="text-white text-[18px] font-bold cursor-pointer" style={{fontSize:"1.5rem"}}>G<span style={{ color: "#1B9FDC" }}>L</span>UG</p> */}
+                    <img src={glugLogo} alt="GLUG" className='md:h-[1.6rem] h-5' />
                 </Link>
 
-                <ul className="list-none hidden sm:flex flex-row gap-10">
+                <ul className="list-none hidden md:flex flex-row gap-10">
                     {navLinks.map((link) => (
                         <li
                             key={link.id}
@@ -41,7 +42,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <div className="sm:hidden flex flex-1 justify-end items-center">
+                <div className="md:hidden flex flex-1 justify-end items-center">
                     <img 
                         src={toggle ? close : menu} 
                         alt="menu" 
