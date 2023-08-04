@@ -10,7 +10,7 @@ const Hero = () => {
         initial={{ x: "-100%" }} 
         animate={{ x: 0 }} 
         transition={{ duration: 0.8, delay: 0.3 }}
-        className={`flex md:flex-wrap flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} md:py-[5rem] pb-[5rem]`}
+        className={`flex flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} md:py-[5rem] pb-[5rem]`}
       >
         {/* <!-----------------  LEFT COLUMN  -----------------> */}
         <div className={`w-full md:w-1/2 flex flex-row justify-end items-center`}>
@@ -18,13 +18,13 @@ const Hero = () => {
             initial={{ x: "100%" }} 
             animate={{ x: 0 }} 
             transition={{ duration: 1.3, delay: 0.3 }} 
-            className="font-body text-white mx-auto max-w-2xl"
+            className="text-white mx-auto max-w-2xl"
           >
-            <h1 className="text-4xl md:text-6xl font-semibold mb-4 md:text-start text-center">
+            <h1 className={`${styles.headingText}`}>
               What is G<span className="text-glugBlue">l</span>
               ug?
             </h1>
-            <p className="text-[0.9rem] md:text-md md:text-start text-center max-w-[500px]">
+            <p className={`${styles.bodyText}`}>
               Glug is a cool technology! Lorem Ipsum is simply
               dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy

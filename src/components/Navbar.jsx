@@ -31,7 +31,7 @@ const Navbar = () => {
       initial={{ y: -100 }} // Step 3: Animate from the top (off-screen)
       animate={{ y: 0 }} // Step 4: Animate to its initial position (on-screen)
       transition={{ duration: 1.3, delay: 0.3 }} // Step 5: Adjust the duration and delay as needed
-      className={`${styles.paddingX} w-full flex items-center py-8 fixed top-0 z-20 font-body ${
+      className={`${styles.paddingX} w-full flex items-center py-8 fixed top-0 z-20 font-russo ${
         scrolled ? "bg-navbarBG bg-opacity-75" : "bg-transparent"
       }`}
     >
@@ -80,7 +80,7 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                  } font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
