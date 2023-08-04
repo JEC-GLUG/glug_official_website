@@ -9,6 +9,7 @@ module.exports = {
         secondary: "#aaa6c3",
         tertiary: "#151030",
         glugBlue: "#1B9FDC",
+        navbarBG: "#060c19",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

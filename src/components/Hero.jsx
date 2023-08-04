@@ -8,34 +8,28 @@ const Hero = () => {
     return (
         <section className={`relative w-full h-screen mx-auto`}>
             <div
-                className={`flex md:flex-wrap flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} py-[5rem]`}
+                className={`flex md:flex-wrap flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} md:py-[5rem] pb-[5rem]`}
             >
                 {/* <!-----------------  LEFT COLUMN  -----------------> */}
-                <div class={`w-full md:w-1/2 flex flex-col justify-center`}>
+                <div class={`w-full md:w-1/2 flex flex-row justify-end items-center`}>
                     <div className="font-body text-white mx-auto max-w-2xl">
                         <h1 className="text-4xl md:text-6xl font-semibold mb-4 md:text-start text-center">
                             What is G<span className="text-glugBlue">l</span>
                             ug?
                         </h1>
-                        <p className="text-[0.9rem] md:text-lg md:text-start text-justify">
+                        <p className="text-[0.9rem] md:text-md md:text-start text-center max-w-[500px]">
                             Glug is a cool technology! Lorem Ipsum is simply
                             dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy
                             text ever since the 1500s, when an unknown printer
                             took a galley of type and scrambled it to make a
-                            type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and
-                            more recently with desktop publishing software like
-                            Aldus PageMaker including versions of Lorem Ipsum
+                            type specimen book.
                         </p>
                     </div>
                 </div>
 
                 {/* <!-----------------  RIGHT COLUMN  -----------------> */}
-                <div class="w-full md:w-1/2 flex flex-col justify-center md:pl-[16rem]">
+                <div class="w-full md:w-1/2 flex flex-col justify-center">
                     <div class="w-full h-full">
                         <GlugCanvas />
                     </div>
