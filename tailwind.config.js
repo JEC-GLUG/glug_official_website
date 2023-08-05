@@ -22,7 +22,7 @@ module.exports = {
       },
       fontFamily: {
         "display": ["Oswald"],
-        "body": ["Russo One", ],
+        "russo": "Russo One",
       },
     },
   },
