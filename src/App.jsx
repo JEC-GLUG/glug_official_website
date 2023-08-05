@@ -18,12 +18,11 @@ function App() {
                         zIndex: -1,
                     }}
                 />
-                <div style={{overflow:"auto"}} className="w-full h-screen">
+                <div style={{overflow: "auto"}} className="w-full h-screen">
                     <Navbar />
                     <Hero />
-                    <Why_joinGlug_Page/>
+                    <Why_joinGlug_Page />
                 </div>
-                
             </div>
         </BrowserRouter>
     );

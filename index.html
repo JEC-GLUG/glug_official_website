@@ -11,17 +11,20 @@
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>JEC-GLUG</title>
-    </head>
-    <style>
-        body {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+        
+        <style>
+            body, div {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
             }
-
             body::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
+                display: none;
+            }
+            div::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+    </head>
     <body>
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>
