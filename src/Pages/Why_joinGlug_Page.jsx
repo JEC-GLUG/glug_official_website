@@ -72,7 +72,7 @@ const Why_joinGlug_Page = () => {
               since the 1500s, when an unknown printer took a galley of type and scrambled it to
               make a type specimen book.
             </p>
-            {/* Join Us button */}
+            
             <div className="mt-11">
               <Button> Join Us </Button>
             </div>
