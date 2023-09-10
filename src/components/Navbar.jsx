@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion"; // Step 1: Import motion from framer-motion
+import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, glugLogo } from "../assets";
@@ -26,11 +26,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    // Step 2: Wrap the nav element with motion.div and apply the animation properties
     <motion.div
-      initial={{ y: -100 }} // Step 3: Animate from the top (off-screen)
-      animate={{ y: 0 }} // Step 4: Animate to its initial position (on-screen)
-      transition={{ duration: 1.3, delay: 0.3 }} // Step 5: Adjust the duration and delay as needed
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1.3, delay: 0.3 }}
       className={`${styles.paddingX} w-full flex items-center py-8 fixed top-0 z-20 font-russo ${
         scrolled ? "bg-navbarBG bg-opacity-75" : "bg-transparent"
       }`}
