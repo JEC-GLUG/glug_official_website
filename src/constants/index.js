@@ -10,7 +10,7 @@ const navLinks = [
         title: "Projects",
     },
     {
-        id: "alumni",
+        id: "/alumni",
         title: "Alumni",
     },
     {

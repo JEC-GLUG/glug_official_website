@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/"
+          to="/" // Set the root path as the 'to' attribute
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -55,7 +55,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <Link to={link.id}>{link.title}</Link> {/* Use 'to' here */}
             </li>
           ))}
         </ul>
@@ -85,7 +85,7 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <Link to={link.id}>{link.title}</Link> {/* Use 'to' here */}
                 </li>
               ))}
             </ul>

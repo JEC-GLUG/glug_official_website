@@ -4,7 +4,9 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Why_joinGlug_Page from "./WhyJoinPage";
 import EventsPage from "./EventsPage";
-import Cardoverlay from "../components/project card/Cardoverlay";
+import Cardoverlay from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
+import ProjectsPage from "./ProjectsPage";
 
 const Home = () => {
     return (
@@ -22,11 +24,7 @@ const Home = () => {
                 <Hero />
                 <Why_joinGlug_Page />
                 <EventsPage />
-                <Cardoverlay
-                    leftImage="../src/assets/mouse.png"
-                    title="lorem10"
-                    description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
-                />
+                <ProjectsPage/>
             </div>
         </div>
     );
