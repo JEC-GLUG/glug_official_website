@@ -1,6 +1,5 @@
 import React from "react";
 import StarsCanvas from "../components/canvas/Star";
-import Navbar from "../components/Navbar";
 
 const Alumni = () => {
   return (
@@ -14,7 +13,6 @@ const Alumni = () => {
         }}
       />
       <div className="relative">
-        <Navbar />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Add margin on the sides */}
           <div className="mt-1">

@@ -2,11 +2,11 @@
 // ******  Navigation Links  ****** 
 const navLinks = [
     {
-        id: "resources",
+        id: "/resources",
         title: "Resources",
     },
     {
-        id: "projects",
+        id: "/projects",
         title: "Projects",
     },
     {
@@ -14,7 +14,7 @@ const navLinks = [
         title: "Alumni",
     },
     {
-        id: "join",
+        id: "/join",
         title: "Join Us",
     },
 ];

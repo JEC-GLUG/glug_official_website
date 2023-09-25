@@ -1,14 +1,32 @@
 import React from "react";
 import StarsCanvas from "../components/canvas/Star";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Why_joinGlug_Page from "./WhyJoinPage";
 import EventsPage from "./EventsPage";
-import Cardoverlay from "../components/ProjectCard";
-import ProjectCard from "../components/ProjectCard";
 import ProjectsPage from "./ProjectsPage";
+import { useEffect } from "react";
+import { useRef } from "react";
 
-const Home = () => {
+const Home = ({ setScrolled }) => {
+    const scrollContainerRef = useRef(null);
+
+    const handleScroll = () => {
+        if (scrollContainerRef.current.scrollTop > 150) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        const scrollContainer = scrollContainerRef.current;
+        scrollContainer.addEventListener("scroll", handleScroll);
+
+        return () => {
+            scrollContainer.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div className="custom-cursor" style={{ position: "relative" }}>
             <StarsCanvas
@@ -19,12 +37,11 @@ const Home = () => {
                     zIndex: -1,
                 }}
             />
-            <div style={{ overflow: "auto" }} className="w-full h-screen">
-                <Navbar />
+            <div ref={scrollContainerRef} style={{ overflow: "auto" }} className="w-full h-screen">
                 <Hero />
                 <Why_joinGlug_Page />
                 <EventsPage />
-                <ProjectsPage/>
+                <ProjectsPage />
             </div>
         </div>
     );

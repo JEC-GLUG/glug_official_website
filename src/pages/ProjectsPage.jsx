@@ -5,7 +5,7 @@ const cardData = [
   {
     imageSrc: 'https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png',
     header: 'Header 1',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took .',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   },
   {
     imageSrc: 'https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png',
