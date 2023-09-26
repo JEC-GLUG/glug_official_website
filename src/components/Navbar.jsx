@@ -17,7 +17,7 @@ const Navbar = ({ scrolled }) => {
             className={`${
                 styles.paddingX
             } w-full flex items-center py-8 fixed top-0 z-20 font-russo ${
-                scrolled ? "bg-navbarBG bg-opacity-75" : "bg-transparent"
+                scrolled ? "bg-navbarBG bg-opacity-96   " : "bg-transparent"
             }`}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
