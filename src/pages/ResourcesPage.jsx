@@ -1,12 +1,12 @@
 import React from "react";
 import PageLayout from "../Layout/PageLayout";
 
-const ProjectsPage = ({setScrolled}) => {
+const ResourcesPage = ({ setScrolled }) => {
     return (
         <PageLayout setScrolled={setScrolled}>
-            <div className="text-white mt-24 ml-32 text-5xl">Projects</div>
+            <div className="text-white mt-24 ml-32 text-5xl">Resources</div>
         </PageLayout>
     );
 };
 
-export default ProjectsPage;
+export default ResourcesPage;

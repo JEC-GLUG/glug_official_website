@@ -29,6 +29,7 @@ const Why_joinGlug_Page = () => {
     return (
         <>
             <section
+                id="why-join-glug"
                 className={`relative w-full h-screen mx-auto overflow-hidden text-white flex flex-wrap ${styles.paddingX} mt-5`}
                 style={{ fontFamily: "'Russo One', sans-serif" }}
             >
