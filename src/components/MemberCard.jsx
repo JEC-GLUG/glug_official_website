@@ -22,7 +22,7 @@ const MemberCard = ({name, position}) => {
             <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
                 <Avatar
                     src="/static/images/avatar/1.jpg"
-                    sx={{ "--Avatar-size": "8rem" }}
+                    sx={{ "--Avatar-size": "7rem", marginTop: "0.8rem" }}
                 />
                 <Typography
                     level="body-sm"
