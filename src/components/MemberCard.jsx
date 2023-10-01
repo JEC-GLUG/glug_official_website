@@ -1,48 +1,44 @@
 import * as React from "react";
 import Avatar from "@mui/joy/Avatar";
-import Chip from "@mui/joy/Chip";
 import Box from "@mui/joy/Box";
-import Button from "@mui/joy/Button";
-import ButtonGroup from "@mui/joy/ButtonGroup";
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
-import CardOverflow from "@mui/joy/CardOverflow";
-import CardActions from "@mui/joy/CardActions";
 import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
 import SvgIcon from "@mui/joy/SvgIcon";
 
-const MemberCard = () => {
+const MemberCard = ({name, position}) => {
     return (
         <Card
+            variant="plain"
             sx={{
-                width: 320,
+                width: 300,
                 maxWidth: "100%",
                 boxShadow: "lg",
+                height: "20rem",
+                backgroundColor: "black",
             }}
         >
             <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
                 <Avatar
                     src="/static/images/avatar/1.jpg"
-                    sx={{ "--Avatar-size": "4rem" }}
+                    sx={{ "--Avatar-size": "8rem" }}
                 />
-                <Chip
-                    size="sm"
-                    variant="soft"
-                    color="primary"
+                <Typography
+                    level="body-sm"
                     sx={{
-                        mt: -1,
-                        mb: 1,
-                        border: "3px solid",
-                        borderColor: "background.surface",
+                        maxWidth: "24ch",
+                        marginTop: "1.2rem",
+                        color: "whitesmoke",
                     }}
                 >
-                    HEAD
-                </Chip>
-                <Typography level="title-lg">Josephine Blanton</Typography>
-                <Typography level="body-sm" sx={{ maxWidth: "24ch" }}>
-                    Hello, this is my bio and I am a PRO member of MUI. I am a
-                    developer and I love to code.
+                    {position}
+                </Typography>
+                <Typography
+                    level="title-lg"
+                    sx={{ marginTop: "0.4rem", color: "whitesmoke" }}
+                >
+                    {name}
                 </Typography>
                 <Box
                     sx={{
@@ -52,22 +48,24 @@ const MemberCard = () => {
                         "& > button": { borderRadius: "2rem" },
                     }}
                 >
-                    <IconButton size="sm" variant="plain" color="neutral">
+                    <IconButton size="lg" variant="plain" color="neutral">
                         <SvgIcon>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
+                                x="0px"
+                                y="0px"
+                                width="100"
+                                height="100"
+                                viewBox="0 0 32 32"
                             >
                                 <path
                                     fill="currentColor"
-                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z"
-                                />
+                                    d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"
+                                ></path>
                             </svg>
                         </SvgIcon>
                     </IconButton>
-                    <IconButton size="sm" variant="plain" color="neutral">
+                    <IconButton size="lg" variant="plain" color="neutral">
                         <SvgIcon>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -86,49 +84,25 @@ const MemberCard = () => {
                             </svg>
                         </SvgIcon>
                     </IconButton>
-                    <IconButton size="sm" variant="plain" color="neutral">
+                    <IconButton size="lg" variant="plain" color="neutral">
                         <SvgIcon>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
+                                x="0px"
+                                y="0px"
+                                width="100"
+                                height="100"
+                                viewBox="0 0 50 50"
                             >
                                 <path
                                     fill="currentColor"
-                                    d="M22.212 5.656a8.384 8.384 0 0 1-2.401.658A4.195 4.195 0 0 0 21.649 4c-.82.488-1.719.83-2.655 1.015a4.182 4.182 0 0 0-7.126 3.814a11.874 11.874 0 0 1-8.621-4.37a4.168 4.168 0 0 0-.566 2.103c0 1.45.739 2.731 1.86 3.481a4.169 4.169 0 0 1-1.894-.523v.051a4.185 4.185 0 0 0 3.355 4.102a4.205 4.205 0 0 1-1.89.072A4.185 4.185 0 0 0 8.02 16.65a8.394 8.394 0 0 1-6.192 1.732a11.831 11.831 0 0 0 6.41 1.88c7.694 0 11.9-6.373 11.9-11.9c0-.18-.004-.362-.012-.541a8.497 8.497 0 0 0 2.086-2.164Z"
-                                />
-                            </svg>
-                        </SvgIcon>
-                    </IconButton>
-                    <IconButton size="sm" variant="plain" color="neutral">
-                        <SvgIcon>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M19.989 11.572a7.96 7.96 0 0 0-1.573-4.351a9.757 9.757 0 0 1-.92.87a13.156 13.156 0 0 1-3.313 2.01c.167.35.32.689.455 1.009v.003c.027.061.05.118.094.229l.017.04c1.513-.17 3.109-.107 4.656.103c.206.027.4.056.584.087Zm-9.385-7.45a46.15 46.15 0 0 1 2.692 4.27c1.223-.482 2.234-1.09 3.048-1.767c.33-.274.594-.532.796-.755A7.968 7.968 0 0 0 12 4c-.476 0-.942.042-1.396.121ZM4.253 9.997a29.21 29.21 0 0 0 2.04-.123a31.53 31.53 0 0 0 4.862-.822a54.36 54.36 0 0 0-2.7-4.227a8.018 8.018 0 0 0-4.202 5.172Zm1.53 7.038a14.21 14.21 0 0 1 1.575-1.899c1.454-1.49 3.17-2.65 5.156-3.29l.062-.018c-.165-.364-.32-.689-.476-.995c-1.836.535-3.77.869-5.697 1.042c-.94.085-1.783.122-2.403.128a7.966 7.966 0 0 0 1.784 5.032Zm9.221 2.38a35.951 35.951 0 0 0-1.632-5.709c-2 .727-3.596 1.79-4.829 3.058a9.77 9.77 0 0 0-1.317 1.655A7.964 7.964 0 0 0 12 20a7.977 7.977 0 0 0 3.005-.583Zm1.874-1.075a7.998 7.998 0 0 0 2.987-4.87c-.34-.085-.771-.17-1.245-.236a12.025 12.025 0 0 0-3.18-.033a39.39 39.39 0 0 1 1.438 5.14ZM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10Z"
-                                />
+                                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                                ></path>
                             </svg>
                         </SvgIcon>
                     </IconButton>
                 </Box>
             </CardContent>
-            <CardOverflow sx={{ bgcolor: "background.level1" }}>
-                <CardActions buttonFlex="1">
-                    <ButtonGroup
-                        variant="outlined"
-                        sx={{ bgcolor: "background.surface" }}
-                    >
-                        <Button>Message</Button>
-                        <Button>Connect</Button>
-                    </ButtonGroup>
-                </CardActions>
-            </CardOverflow>
         </Card>
     );
 };
