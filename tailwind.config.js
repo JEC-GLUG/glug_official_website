@@ -23,6 +23,7 @@ module.exports = {
       fontFamily: {
         "display": ["Oswald"],
         "russo": "Russo One",
+        "inter": "Inter",
       },
     },
   },

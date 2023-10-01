@@ -16,7 +16,7 @@ function App() {
             <Navbar scrolled={scrolled} />
             <Routes>
                 <Route exact path="/" element={<Home setScrolled={setScrolled} />} />
-                <Route exact path="/alumni" element={<Alumni />} />
+                <Route exact path="/alumni" element={<Alumni setScrolled={setScrolled} />} />
             </Routes>
         </BrowserRouter>
     );
