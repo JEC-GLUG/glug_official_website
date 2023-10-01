@@ -5,6 +5,7 @@ import Why_joinGlug_Page from "./WhyJoinPage";
 import EventsPage from "./EventsPage";
 import ProjectsPage from "./Projects";
 import PageLayout from "../Layout/PageLayout";
+import CurrentMembers from "./CurrentMembers";
 
 const Home = ({ setScrolled }) => {
     return (
@@ -13,6 +14,7 @@ const Home = ({ setScrolled }) => {
             <Why_joinGlug_Page />
             <EventsPage />
             <ProjectsPage />
+            <CurrentMembers />
         </PageLayout>
     );
 };
