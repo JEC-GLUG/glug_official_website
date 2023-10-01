@@ -6,6 +6,7 @@ import EventsPage from "./EventsPage";
 import ProjectsPage from "./Projects";
 import PageLayout from "../Layout/PageLayout";
 import CurrentMembers from "./CurrentMembers";
+import JoinUs from "../components/JoinUs";
 
 const Home = ({ setScrolled }) => {
     return (
@@ -15,6 +16,7 @@ const Home = ({ setScrolled }) => {
             <EventsPage />
             <ProjectsPage />
             <CurrentMembers />
+            <JoinUs />
         </PageLayout>
     );
 };

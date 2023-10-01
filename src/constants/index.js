@@ -14,7 +14,7 @@ const navLinks = [
         title: "Alumni",
     },
     {
-        id: "/#join-us",
+        id: "#join-us",
         title: "Join Us",
     },
 ];

@@ -7,7 +7,7 @@ import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
 import SvgIcon from "@mui/joy/SvgIcon";
 
-const MemberCard = ({name, position}) => {
+const MemberCard = ({ name, position }) => {
     return (
         <Card
             variant="plain"

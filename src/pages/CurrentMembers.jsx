@@ -2,6 +2,9 @@ import React from "react";
 import MemberCard from "../components/MemberCard";
 import { styles } from "../styles";
 
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const CurrentMembers = () => {
     return (
         <section
@@ -13,12 +16,41 @@ const CurrentMembers = () => {
                     bers
                 </h1>
             </div>
-            <div className="mt-0 flex items-center justify-center gap-8">
-                <MemberCard name={"Sourabh Koch Gohain"} position={"Head"} />
-                <MemberCard name={"Vaskarjya Das"} position={"Co-Head"} />
-                <MemberCard name={"Zubayer Ahmed Zidhan"} position={"Co-Head"} />
-                <MemberCard name={"Tilok Doley"} position={"Co-Head"} />
-            </div>
+            <Swiper
+                breakpoints={{
+                    200: {
+                        spaceBetween: 60,
+                        slidesPerView: 1,
+                    },
+                    500: {
+                        spaceBetween: 60,
+                        slidesPerView: 2,
+                    },
+                    900: {
+                        spaceBetween: 60,
+                        slidesPerView: 3,
+                    },
+                }}
+            >
+                <SwiperSlide>
+                    <MemberCard
+                        name={"Sourabh Koch Gohain"}
+                        position={"Head"}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <MemberCard name={"Vaskarjya Das"} position={"Co-Head"} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <MemberCard
+                        name={"Zubayer Ahmed Zidhan"}
+                        position={"Co-Head"}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <MemberCard name={"Tilok Doley"} position={"Co-Head"} />
+                </SwiperSlide>
+            </Swiper>
         </section>
     );
 };
