@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   return (
     <>
       <style>
@@ -89,7 +89,7 @@ const Button = ({ children }) => {
         `}
       </style>
 
-      <button className="button relative">
+      <button onClick={onClick} className="button relative">
         {children}
         <div className="button-border-top-right" />
         <div className="button-border-bottom-left" />

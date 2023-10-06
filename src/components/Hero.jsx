@@ -5,7 +5,7 @@ import GlugCanvas from "./canvas/Glug";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
+    <section id="hero" className={`relative w-full h-screen mx-auto overflow-hidden`}>
       <motion.div
         initial={{ x: "-100%" }} 
         animate={{ x: 0 }} 

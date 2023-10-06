@@ -1,8 +1,7 @@
 import React from "react";
 import { styles } from "../styles";
-import {Swiper, SwiperSlide} from "swiper/react";
 
-import 'swiper/css';
+import JoinUsForm from "./JoinUsForm";
 
 const JoinUs = () => {
     return (
@@ -14,6 +13,10 @@ const JoinUs = () => {
                     <h1 className={`${styles.headingText}`} id="join-us">
                         Join<span className="text-glugBlue">U</span>s
                     </h1>
+                </div>
+                {/* Form */}
+                <div className="bg-[#082432]">
+                    <JoinUsForm />
                 </div>
             </section>
         </>
