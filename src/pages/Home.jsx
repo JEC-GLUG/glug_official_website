@@ -6,6 +6,7 @@ import EventsPage from "./EventsPage";
 import ProjectsPage from "./ProjectsPage";
 import { useEffect } from "react";
 import { useRef } from "react";
+import ProfilesPage from "./profilesPage";
 
 const Home = ({ setScrolled }) => {
     const scrollContainerRef = useRef(null);
@@ -42,6 +43,7 @@ const Home = ({ setScrolled }) => {
                 <Why_joinGlug_Page />
                 <EventsPage />
                 <ProjectsPage />
+                <ProfilesPage/>
             </div>
         </div>
     );

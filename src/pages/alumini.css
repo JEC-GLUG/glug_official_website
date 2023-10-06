@@ -1,0 +1,12 @@
+/* Add this CSS animation to your stylesheets */
+.card-animation {
+    opacity: 0;
+    transform: translateX(-50px); /* Move the cards 50px to the left */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .card-animation.card-show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  

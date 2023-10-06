@@ -11,6 +11,7 @@ const EventsPage = () => {
       className={`relative w-full mx-auto overflow-hidden text-white flex flex-wrap justify-center items-center ${styles.paddingX} mt-5`}
       style={{ fontFamily: "'Russo One', sans-serif" }}
     >
+        
       <div className="timeline-scrollable mb-11">
         <div className="text-4xl  flex flex-wrap justify-center items-center mb-2"> Event </div> 
         <VerticalTimeline>
