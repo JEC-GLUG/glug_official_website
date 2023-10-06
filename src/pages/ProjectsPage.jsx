@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
+import Projects from './Projects';
 import { styles } from "../styles";
 
 const cardData = [
@@ -27,7 +27,7 @@ const ProjectsPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
         {cardData.map((card, index) => (
           <div key={index} className="w-full p-4">
-            <ProjectCard
+            <Project
               imageSrc={card.imageSrc}
               header={card.header}
               description={card.description}

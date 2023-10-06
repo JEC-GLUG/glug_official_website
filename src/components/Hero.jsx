@@ -25,12 +25,10 @@ const Hero = () => {
               ug?
             </h1>
             <p className={`${styles.bodyText}`}>
-              Glug is a cool technology! Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to make a
-              type specimen book.
+            The GNU Linux Users Group, or GLUG is a community of Jorhat Engineering College, which welcomes 
+every enthusiast about technology. GLUG serves as your gateway for entering into the realm of open source software and technologies that will blow your minds! Our aim is to foster a vibrant and inclusive 
+environment for everyone where we share, work on new ideas and help each other lean and grow. We at 
+JEC GLUG believe in the freedom of knowledge and thus “Free as in freedom” is our proud moto
             </p>
           </div>
         </div>
