@@ -96,7 +96,22 @@ your resume and gain a competitive edge in the job market
                         </p>
                         {/* Join Us button */}
                         <div className="mt-11 flex justify-center md:justify-start">
-                            <Button> Join Us </Button>
+                            <Button
+                                onClick={() => {
+                                    const element =
+                                        document.getElementById(
+                                            "join-us"
+                                        );
+                                    console.log(element);
+                                    
+                                    element.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                                }}
+                            >
+                                {" "}
+                                Join Us{" "}
+                            </Button>
                         </div>
                     </div>
                 </div>

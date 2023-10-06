@@ -26,7 +26,9 @@ const Navbar = ({ scrolled }) => {
                     className="flex items-center gap-2"
                     onClick={() => {
                         setActive("");
-                        window.scrollTo(0, 0);
+                        const element =
+                            document.getElementById("hero");
+                        element.scrollIntoView({ behavior: "smooth" });
                     }}
                 >
                     <img
@@ -51,6 +53,18 @@ const Navbar = ({ scrolled }) => {
                             {/* Use 'to' here */}
                         </li>
                     ))}
+                    <li
+                            key={"join-us"}
+                            className={`${
+                                active === "join-us"
+                                    ? "text-white"
+                                    : "text-secondary"
+                            } hover:text-white text-[18px] font-medium cursor-pointer`}
+                            onClick={() => setActive("join-us")}
+                        >
+                            <a href="#join-us">Join Us</a>
+                            {/* Use 'to' here */}
+                        </li>
                 </ul>
 
                 <div className="md:hidden flex flex-1 justify-end items-center">
