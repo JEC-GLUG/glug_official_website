@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Alumni from "./pages/Alumni";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import { useEffect } from "react";
 import { useState } from "react";
+import ResourcesPage from "./pages/ResourcesPage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
     const [scrolled, setScrolled] = useState(false);
@@ -16,7 +17,9 @@ function App() {
             <Navbar scrolled={scrolled} />
             <Routes>
                 <Route exact path="/" element={<Home setScrolled={setScrolled} />} />
-                <Route exact path="/alumni" element={<Alumni />} />
+                <Route exact path="/alumni" element={<Alumni setScrolled={setScrolled} />} />
+                <Route exact path="/resources" element={<ResourcesPage setScrolled={setScrolled} />} />
+                <Route exact path="/projects" element={<ProjectsPage setScrolled={setScrolled} />} />
             </Routes>
         </BrowserRouter>
     );

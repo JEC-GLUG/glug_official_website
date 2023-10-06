@@ -50,7 +50,7 @@ const Hero = () => {
 
       {/* <!-----------------  Scroll Animation -----------------> */}
       <div className="absolute xs:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">
-                <a href="#">
+                <a href="#why-join-glug">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-glugBlue border-opacity-75 flex justify-center items-start p-2">
                         <motion.div
                             animate={{
