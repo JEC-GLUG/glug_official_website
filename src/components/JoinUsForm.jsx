@@ -1,20 +1,25 @@
-import { TextField } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import CustomTextField from "./CustomTextField";
-// import { makeStyles } from "@mui/styles";
 
 const JoinUsForm = () => {
-    const textFieldStyles = {
-        " & label.Mui-focused": {
-            color: "white",
-        },
-        "& .MuiOutlinedInput-root": {
-            "&.Mui-focused fieldset": {
-                borderColor: "white",
-            },
-        },
-    };
 
+    const [userData, setUserData] = useState({
+        name : "",
+        email : "",
+        department : "",
+        year: "",
+    });
+
+
+
+    // Handle Change in Input Field
+    const handleChange = (e) =>{
+        const value = e.target.value;
+        setUserData({...userData, [e.target.name]: value.trim()});
+    }
+
+
+    // Handle Form Submission
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -36,14 +41,38 @@ const JoinUsForm = () => {
     };
 
     return (
-        <div>
-            <form className="join-us-form" onSubmit={(e) => handleSubmit(e)}>
+        <div className="">
+            <form className="join-us-form flex flex-col align-middle justify-center" onSubmit={(e) => handleSubmit(e)}>
                 <CustomTextField
                     label="Name"
                     type="text"
                     margin="normal"
                     name="name"
-                    value={"Zubayer"}
+                    value={userData.name}
+                    onChange={(e) => handleChange(e)}
+                />
+                <CustomTextField
+                    label="Email"
+                    type="text"
+                    margin="normal"
+                    name="email"
+                    value={userData.email}
+                    onChange={(e) => handleChange(e)}
+                />
+                <CustomTextField
+                    label="Department"
+                    type="text"
+                    margin="normal"
+                    name="department"
+                    value={userData.department}
+                    onChange={(e) => handleChange(e)}
+                />
+                <CustomTextField
+                    label="Year"
+                    type="text"
+                    margin="normal"
+                    name="year"
+                    value={userData.year}
                     onChange={(e) => handleChange(e)}
                 />
             </form>
