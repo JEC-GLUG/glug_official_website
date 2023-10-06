@@ -3,6 +3,8 @@ import { styles } from "../styles";
 
 import JoinUsForm from "./JoinUsForm";
 
+import { quote } from "../assets";
+
 const JoinUs = () => {
     return (
         <>
@@ -11,12 +13,15 @@ const JoinUs = () => {
             >
                 <div className="w-full flex items-center justify-center relative">
                     <h1 className={`${styles.headingText}`} id="join-us">
-                        Join<span className="text-glugBlue">U</span>s
+                        Join <span className="text-glugBlue">U</span>s
                     </h1>
                 </div>
+
                 {/* Form */}
-                <div className="bg-[#082432]">
-                    <JoinUsForm />
+                <div className="w-full flex flex-row align-middle justify-center -mt-[5.8rem]">
+                    <div className=" h-[26rem] w-[32rem] px-6 pt-4">
+                        <JoinUsForm />
+                    </div>
                 </div>
             </section>
         </>

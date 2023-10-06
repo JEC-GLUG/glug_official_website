@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import CustomTextField from "./CustomTextField";
+import { Button } from "@mui/material";
 
 const JoinUsForm = () => {
-
     const [userData, setUserData] = useState({
-        name : "",
-        email : "",
-        department : "",
+        name: "",
+        email: "",
+        department: "",
         year: "",
     });
 
-
-
     // Handle Change in Input Field
-    const handleChange = (e) =>{
+    const handleChange = (e) => {
         const value = e.target.value;
-        setUserData({...userData, [e.target.name]: value.trim()});
-    }
-
+        setUserData({ ...userData, [e.target.name]: value.trim() });
+    };
 
     // Handle Form Submission
     const handleSubmit = (e) => {
@@ -42,7 +39,10 @@ const JoinUsForm = () => {
 
     return (
         <div className="">
-            <form className="join-us-form flex flex-col align-middle justify-center" onSubmit={(e) => handleSubmit(e)}>
+            <form
+                className="join-us-form flex flex-col align-middle justify-center self-center"
+                onSubmit={(e) => handleSubmit(e)}
+            >
                 <CustomTextField
                     label="Name"
                     type="text"
@@ -53,7 +53,7 @@ const JoinUsForm = () => {
                 />
                 <CustomTextField
                     label="Email"
-                    type="text"
+                    type="email"
                     margin="normal"
                     name="email"
                     value={userData.email}
@@ -75,6 +75,18 @@ const JoinUsForm = () => {
                     value={userData.year}
                     onChange={(e) => handleChange(e)}
                 />
+                <Button
+                    variant="contained"
+                    color="success"
+                    size="large"
+                    sx={{
+                        width: "10rem",
+                        alignSelf: "center",
+                        marginTop: "0.6rem"
+                    }}
+                >
+                    Submit
+                </Button>
             </form>
         </div>
     );

@@ -4,7 +4,7 @@ import glugLogo from './glug.png';
 import img1 from './image.png';
 import menu from "./menu.svg";
 import mouse from "./mouse.png";
-
+import quote from "./quote.png";
 
 export {
     backgroundImage,
@@ -13,4 +13,5 @@ export {
     img1,
     menu,
     mouse,
+    quote,
 };
