@@ -11,7 +11,7 @@ const JoinUs = () => {
             <section
                 className={`relative w-full h-screen mx-auto overflow-hidden text-white flex flex-wrap ${styles.paddingX} mt-4 font-inter`}
             >
-                <div className="w-full flex items-center justify-center relative">
+                <div className="w-full flex items-center justify-center relative mt-[9rem]">
                     <h1 className={`${styles.headingText}`} id="join-us">
                         Join <span className="text-glugBlue">U</span>s
                     </h1>
