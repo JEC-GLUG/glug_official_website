@@ -3,7 +3,6 @@ import CustomTextField from "./CustomTextField";
 import { Alert, Button, Snackbar } from "@mui/material";
 import { styled } from "@mui/styles";
 
-
 // const StyledSnackbar = styled((props) => <Snackbar {...props} />)(
 //     ({ theme }) => ({
 //         "& .MuiSnackbar-root": {
@@ -12,11 +11,9 @@ import { styled } from "@mui/styles";
 //     })
 // );
 
-
 const JoinUsForm = () => {
     // Constants
     const SUCCESS = "SUCCESS";
-
 
     // State Variables
     const [userData, setUserData] = useState({
@@ -32,18 +29,17 @@ const JoinUsForm = () => {
         setUserData({ ...userData, [e.target.name]: value });
     };
 
-
     // Toogle Snackbar state
     const [alertType, setAlertType] = useState({
         open: false,
         type: "success",
+        message: "",
     });
 
     // Handle Closing of Alert
-     const handleSnackClose = () => {
-        setAlertType({...alertType, open: false});
-    }
-
+    const handleSnackClose = () => {
+        setAlertType({ ...alertType, open: false });
+    };
 
     // Handle Form Submission
     const handleSubmit = async (e) => {
@@ -51,25 +47,28 @@ const JoinUsForm = () => {
 
         const apiURL = import.meta.env.VITE_FORM_URL;
 
-
-
-        const response = await fetch(apiURL, {
-            method: "POST",
-            redirect: "follow",
-            headers: {
-                "Content-Type": "text/plain;charset=utf-8",
-            },
-            body: JSON.stringify(userData),
-        });
-        if (response.ok) {
-            // Form submitted successfully
-            setAlertType({type: "success", open: true});
-            setUserData({
-                Name: "",
-                Email: "",
-                Department: "",
-                Year: "",
+        const values = Object.values(userData);
+        if (values.includes("")) {
+            setAlertType({ type: "warning", open: true, message: "Please fill out the form before submitting." });
+        } else {
+            const response = await fetch(apiURL, {
+                method: "POST",
+                redirect: "follow",
+                headers: {
+                    "Content-Type": "text/plain;charset=utf-8",
+                },
+                body: JSON.stringify(userData),
             });
+            if (response.ok) {
+                // Form submitted successfully
+                setAlertType({ type: "success", open: true, message: "Your response has been recorded." });
+                setUserData({
+                    Name: "",
+                    Email: "",
+                    Department: "",
+                    Year: "",
+                });
+            }
         }
     };
 
@@ -123,13 +122,13 @@ const JoinUsForm = () => {
                 </Button>
             </form>
             <Snackbar
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
                 open={alertType.open}
                 onClose={handleSnackClose}
                 autoHideDuration={3000}
             >
                 <Alert severity={alertType.type} onClose={handleSnackClose}>
-                    Your response has been recorded.
+                    {alertType.message}
                 </Alert>
             </Snackbar>
         </div>
