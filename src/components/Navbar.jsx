@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, glugLogo } from "../assets";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ scrolled }) => {
     const [active, setActive] = useState("");
@@ -26,8 +27,7 @@ const Navbar = ({ scrolled }) => {
                     className="flex items-center gap-2"
                     onClick={() => {
                         setActive("");
-                        const element =
-                            document.getElementById("hero");
+                        const element = document.getElementById("hero");
                         element.scrollIntoView({ behavior: "smooth" });
                     }}
                 >
@@ -54,17 +54,19 @@ const Navbar = ({ scrolled }) => {
                         </li>
                     ))}
                     <li
-                            key={"join-us"}
-                            className={`${
-                                active === "join-us"
-                                    ? "text-white"
-                                    : "text-secondary"
-                            } hover:text-white text-[18px] font-medium cursor-pointer`}
-                            onClick={() => setActive("join-us")}
-                        >
-                            <a href="#join-us">Join Us</a>
-                            {/* Use 'to' here */}
-                        </li>
+                        key={"join-us"}
+                        className={`${
+                            active === "join-us"
+                                ? "text-white"
+                                : "text-secondary"
+                        } hover:text-white text-[18px] font-medium cursor-pointer`}
+                        onClick={() => setActive("join-us")}
+                    >
+                        <HashLink smooth to="/#join-us">
+                            Join Us
+                        </HashLink>
+                        {/* Use 'to' here */}
+                    </li>
                 </ul>
 
                 <div className="md:hidden flex flex-1 justify-end items-center">
@@ -78,9 +80,15 @@ const Navbar = ({ scrolled }) => {
                     <div
                         className={`${
                             !toggle ? "hidden" : "flex"
-                        } p-6 black-gradient absolute top-20 right-0 mx-4 sm:my-2 -my-7 min-w-[140px] z-10 rounded-xl`}
+                        } p-6 black-gradient absolute top-[7rem] right-0 ml-4 sm:my-2 -my-7 min-w-[9rem] z-10 rounded-xl ${
+                            scrolled
+                                ? "bg-navbarBG bg-opacity-96   "
+                                : "bg-transparent"
+                        }`}
                     >
-                        <ul className="list-none flex justify-end items-start flex-col gap-4">
+                        <ul
+                            className={`list-none flex justify-start items-end flex-col gap-4 -mt-[1rem]`}
+                        >
                             {navLinks.map((link) => (
                                 <li
                                     key={link.id}
@@ -98,6 +106,19 @@ const Navbar = ({ scrolled }) => {
                                     {/* Use 'to' here */}
                                 </li>
                             ))}
+                            <li
+                                key={"join-us"}
+                                className={`${
+                                    active === "join-us"
+                                        ? "text-white"
+                                        : "text-secondary"
+                                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                                onClick={() => setActive("join-us")}
+                            >
+                                <HashLink smooth to="/#join-us">
+                                    Join Us
+                                </HashLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

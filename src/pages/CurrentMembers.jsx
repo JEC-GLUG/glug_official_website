@@ -33,20 +33,18 @@ const CurrentMembers = () => {
                     },
                 }}
             >
-                {
-                    currentMembers.map((member) => (
-                        <SwiperSlide>
-                            <MemberCard
-                                name={member.name}
-                                position={member.position}
-                                imageUrl={member.imageURL}
-                                github={member.github}
-                                linkedIn={member.linkedIn}
-                                insta={member.instagram}
-                            />
-                        </SwiperSlide>
-                    ))
-                }
+                {currentMembers.map((member) => (
+                    <SwiperSlide>
+                        <MemberCard
+                            name={member.name}
+                            position={member.position}
+                            imageUrl={member.imageURL}
+                            github={member.github}
+                            linkedIn={member.linkedIn}
+                            insta={member.instagram}
+                        />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section>
     );
