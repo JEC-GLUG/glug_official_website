@@ -51,8 +51,7 @@ const JoinUsForm = () => {
 
         const apiURL = import.meta.env.VITE_FORM_URL;
 
-        console.log(apiURL);
-        console.log(userData);
+
 
         const response = await fetch(apiURL, {
             method: "POST",

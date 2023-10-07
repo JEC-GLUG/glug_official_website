@@ -33,8 +33,8 @@ const CurrentMembers = () => {
                     },
                 }}
             >
-                {currentMembers.map((member) => (
-                    <SwiperSlide>
+                {currentMembers.map((member, index) => (
+                    <SwiperSlide key={index}>
                         <MemberCard
                             name={member.name}
                             position={member.position}
