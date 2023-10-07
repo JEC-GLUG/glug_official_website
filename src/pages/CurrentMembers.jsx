@@ -4,6 +4,7 @@ import { styles } from "../styles";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { currentMembers } from "../constants";
 
 const CurrentMembers = () => {
     return (
@@ -32,24 +33,20 @@ const CurrentMembers = () => {
                     },
                 }}
             >
-                <SwiperSlide>
-                    <MemberCard
-                        name={"Sourabh Koch Gohain"}
-                        position={"Head"}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <MemberCard name={"Vaskarjya Das"} position={"Co-Head"} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <MemberCard
-                        name={"Zubayer Ahmed Zidhan"}
-                        position={"Co-Head"}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <MemberCard name={"Tilok Doley"} position={"Co-Head"} />
-                </SwiperSlide>
+                {
+                    currentMembers.map((member) => (
+                        <SwiperSlide>
+                            <MemberCard
+                                name={member.name}
+                                position={member.position}
+                                imageUrl={member.imageURL}
+                                github={member.github}
+                                linkedIn={member.linkedIn}
+                                insta={member.instagram}
+                            />
+                        </SwiperSlide>
+                    ))
+                }
             </Swiper>
         </section>
     );

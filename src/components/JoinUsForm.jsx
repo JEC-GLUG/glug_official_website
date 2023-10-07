@@ -29,7 +29,7 @@ const JoinUsForm = () => {
     // Handle Change in Input Field
     const handleChange = (e) => {
         const value = e.target.value;
-        setUserData({ ...userData, [e.target.name]: value.trim() });
+        setUserData({ ...userData, [e.target.name]: value });
     };
 
 
@@ -56,9 +56,9 @@ const JoinUsForm = () => {
 
         const response = await fetch(apiURL, {
             method: "POST",
-            // mode: "no-cors",
+            redirect: "follow",
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "text/plain;charset=utf-8",
             },
             body: JSON.stringify(userData),
         });
@@ -71,16 +71,6 @@ const JoinUsForm = () => {
                 Department: "",
                 Year: "",
             });
-        } else {
-            // Handle error
-            // console.error("Error submitting form");
-            // setAlertType({type: "success", open: true});
-            // setUserData({
-            //     Name: "",
-            //     Email: "",
-            //     Department: "",
-            //     Year: "",
-            // });
         }
     };
 

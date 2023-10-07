@@ -6,6 +6,7 @@ import menu from "./menu.svg";
 import mouse from "./mouse.png";
 import quote from "./quote.png";
 
+
 export {
     backgroundImage,
     close,
