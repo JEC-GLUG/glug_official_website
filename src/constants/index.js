@@ -183,6 +183,14 @@ const currentMembers = [
         instagram: "https://instagram.com/chinmoy1819?igshid=OGQ5ZDc2ODk2ZA==",
     },
     {
+        name: "Mitumoni Kalita",
+        position: "Core Member",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696693251/glug/mitumoni_f9zmfd.jpg",
+        linkedIn: "https://linkedin.com/in/mitumoni-kalita-55516920a",
+        github: "https://github.com/Mitumoni26",
+        instagram: "",
+    },
+    {
         name: "Name",
         position: "Core Member",
         imageURL: "",

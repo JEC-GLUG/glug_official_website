@@ -75,35 +75,32 @@ const Why_joinGlug_Page = () => {
                             ug?
                         </h1>
                         <p className={`${styles.bodyText}`}>
-                        Skill Development: Whether you're a beginner or an experienced, GLUG provides you with the 
-valuable tools and opportunities to expand your arena of knowledge and explore further. Its like launching 
-you to greater heights!
-
-<li>Networking: Connect with peers who share your passion for technology and build relationships that 
-could lead to future collaborations or career opportunities. Learning and growing together.</li>
-
-<li>Community: Feel a sense of belonging within our welcoming and supportive community of GLUG. 
-Here, everyone is equal</li>
-
-<li>
-Career Advancement: Linux skills are highly sought after in the tech industry. In addition, we also 
-provide training for other latest technologies of computer science. By joining our club, you can enhance 
-your resume and gain a competitive edge in the job market
-</li>
-
-
-
+                            Whether you're a beginner or an experienced tech
+                            enthusiast, GLUG offers valuable resources to expand
+                            your knowledge and reach new heights online.
+                        </p>
+                        <p className={`${styles.bodyText} mt-[0.6rem]`}>
+                            Connect with like-minded peers, fostering
+                            relationships that can lead to future collaborations
+                            or career prospects. Learn and grow together.
+                        </p>
+                        <p className={`${styles.bodyText} mt-[0.6rem]`}>
+                            Experience a strong sense of belonging within our
+                            inclusive and supportive GLUG community, where
+                            everyone is equal.
+                        </p>
+                        <p className={`${styles.bodyText} mt-[0.6rem]`}>
+                            By joining our club, you can enhance your resume and
+                            gain a competitive edge in the job market
                         </p>
                         {/* Join Us button */}
-                        <div className="mt-11 flex justify-center md:justify-start">
+                        <div className="mt-8 flex justify-center md:justify-start">
                             <Button
                                 onClick={() => {
                                     const element =
-                                        document.getElementById(
-                                            "join-us"
-                                        );
+                                        document.getElementById("join-us");
                                     console.log(element);
-                                    
+
                                     element.scrollIntoView({
                                         behavior: "smooth",
                                     });
