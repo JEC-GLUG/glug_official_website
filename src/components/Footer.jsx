@@ -18,11 +18,11 @@ const Footer = () => {
             className="w-10 h-10"
           />
            <div className="text-left text-sm ml-5"> 
-          <h4 className='font-inter opacity-60'> &#169; Glug, Jorhat Engineering College</h4>
+          <h4 className='font-inter opacity-60'> &#169; GLUG, Jorhat Engineering College</h4>
         </div>
         </div>
         <div className="text-left text-sm"> 
-          <h4 className='font-inter opacity-60'>Developed By</h4>
+          <h4 className='font-inter opacity-60'>Developed By:</h4>
           <p className='font-inter opacity-60'>Vashkarjya Das</p>
           <p className='font-inter opacity-60'>Zubayer Ahmed Zidhan Laskar</p>
         </div>
