@@ -24,14 +24,15 @@ const EventsPage = () => {
               date={event.date}
               iconStyle={{ background: "#fff", color: "" }}
             >
-              <h3 className="mb-3 font-bold text-xl">{event.title}</h3>
-              <p className="text-sm font-medium leading-snug tracking-wide text-opacity-100">{event.description}</p>
+              <h3 className="mb-3 font-medium  text-xl">{event.title}</h3>
+              <p className="  font-inter text-sm leading-snug tracking-wide text-opacity-100">{event.description}</p>
 
               {/* Add an image here */}
               <img src={event.imageURL} alt={event.title} className="mt-4 w-4/5 h-40 " />
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
+        <button > View more</button>
       </div>
     </section>
   );
