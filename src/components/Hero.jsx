@@ -2,52 +2,62 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import GlugCanvas from "./canvas/Glug";
 
-
 const Hero = () => {
-  return (
-    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
-      <motion.div
-        initial={{ x: "-100%" }} 
-        animate={{ x: 0 }} 
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className={`flex flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} md:py-[5rem] pb-[5rem]`}
-      >
-        {/* <!-----------------  LEFT COLUMN  -----------------> */}
-        <div className={`w-full md:w-1/2 flex flex-row justify-end items-center`}>
-          <div
-            initial={{ x: "100%" }} 
-            animate={{ x: 0 }} 
-            transition={{ duration: 1.3, delay: 0.3 }} 
-            className="text-white mx-auto max-w-2xl"
-          >
-            <h1 className={`${styles.headingText}`}>
-              What is G<span className="text-glugBlue">l</span>
-              ug?
-            </h1>
-            <p className={`${styles.bodyText}`}>
-            The GNU Linux Users Group, or GLUG is a community of Jorhat Engineering College, which welcomes 
-every enthusiast about technology. GLUG serves as your gateway for entering into the realm of open source software and technologies that will blow your minds! Our aim is to foster a vibrant and inclusive 
-environment for everyone where we share, work on new ideas and help each other lean and grow. We at 
-JEC GLUG believe in the freedom of knowledge and thus “Free as in freedom” is our proud moto
-            </p>
-          </div>
-        </div>
-
-        {/* <!-----------------  RIGHT COLUMN  -----------------> */}
-        <motion.div
-          initial={{ x: "1000%" }} 
-          animate={{ x: 0 }} 
-          transition={{ duration: 1.6, delay: 0.1 }} 
-          className="w-full md:w-1/2 flex flex-col justify-center"
+    return (
+        <section
+            id="hero"
+            className={`relative w-full h-screen mx-auto overflow-hidden`}
         >
-          <div className="w-full h-full">
-            <GlugCanvas />
-          </div>
-        </motion.div>
-      </motion.div>
+            <motion.div
+                initial={{ x: "-100%" }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className={`flex flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} md:py-[5rem] pb-[5rem]`}
+            >
+                {/* <!-----------------  LEFT COLUMN  -----------------> */}
+                <div
+                    className={`w-full md:w-1/2 flex flex-row justify-end items-center`}
+                >
+                    <div
+                        initial={{ x: "100%" }}
+                        animate={{ x: 0 }}
+                        transition={{ duration: 1.3, delay: 0.3 }}
+                        className="text-white mx-auto max-w-2xl"
+                    >
+                        <h1 className={`${styles.headingText}`}>
+                            What is G<span className="text-glugBlue">l</span>
+                            ug?
+                        </h1>
+                        <p className={`${styles.bodyText}`}>
+                            GLUG, the GNU Linux Users Group at Jorhat
+                            Engineering College, is a welcoming community of
+                            technology enthusiasts. We serve as a gateway to the
+                            world of open-source software and cutting-edge
+                            technologies. Our goal is to create a vibrant and
+                            inclusive environment where we share, collaborate on
+                            new ideas, and support each other's learning and
+                            growth. At JEC GLUG, we uphold the value of
+                            knowledge freedom, making "Free as in freedom" our
+                            proud motto.
+                        </p>
+                    </div>
+                </div>
 
-      {/* <!-----------------  Scroll Animation -----------------> */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">
+                {/* <!-----------------  RIGHT COLUMN  -----------------> */}
+                <motion.div
+                    initial={{ x: "1000%" }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 1.6, delay: 0.1 }}
+                    className="w-full md:w-1/2 flex flex-col justify-center"
+                >
+                    <div className="w-full h-full">
+                        <GlugCanvas />
+                    </div>
+                </motion.div>
+            </motion.div>
+
+            {/* <!-----------------  Scroll Animation -----------------> */}
+            <div className="absolute xs:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">
                 <a href="#why-join-glug">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-glugBlue border-opacity-75 flex justify-center items-start p-2">
                         <motion.div
@@ -64,8 +74,8 @@ JEC GLUG believe in the freedom of knowledge and thus “Free as in freedom” i
                     </div>
                 </a>
             </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Hero;
