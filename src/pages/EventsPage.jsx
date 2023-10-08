@@ -32,7 +32,7 @@ const EventsPage = () => {
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
-        <button > View more</button>
+      
       </div>
     </section>
   );

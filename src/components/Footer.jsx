@@ -1,5 +1,5 @@
 import React from 'react';
-
+import img1 from '../assets/Glug1.png'
 const Footer = () => {
   return (
     <footer style={{background:"#060C19"}} className="text-white py-4">
@@ -11,7 +11,7 @@ const Footer = () => {
             className="w-10 h-10 mr-2"
           />
           <img
-            src="left-image-url.png"
+            src={img1}
             alt="Left Image"
             className="w-10 h-10"
           />
