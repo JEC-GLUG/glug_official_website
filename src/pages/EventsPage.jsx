@@ -4,6 +4,7 @@ import "react-vertical-timeline-component/style.min.css";
 import eventData from "../Data/eventData";
 import { styles } from "../styles";
 import './timeline.css';
+import { Link } from "react-router-dom";
 
 const EventsPage = () => {
   return (
@@ -37,9 +38,10 @@ const EventsPage = () => {
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
-        <div className="mt-5 relative w-full mx-auto overflow-hidden text-white flex flex-wrap justify-center items-center"><button className="bg-white hover:bg-glugBlue text-glugBlue font-normal hover:text-white py-2 px-4 rounded">
+        <div className="mt-5 relative w-full mx-auto overflow-hidden text-white flex flex-wrap justify-center items-center">
+          <Link to="/events" className="bg-white hover:bg-glugBlue text-glugBlue font-normal hover:text-white py-2 px-4 rounded">
               View All 
-            </button></div>
+            </Link></div>
         
       </div>
     </section>
