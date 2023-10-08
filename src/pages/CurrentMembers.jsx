@@ -17,35 +17,37 @@ const CurrentMembers = () => {
                     bers
                 </h1>
             </div>
-            <Swiper
-                breakpoints={{
-                    200: {
-                        spaceBetween: 60,
-                        slidesPerView: 1,
-                    },
-                    500: {
-                        spaceBetween: 60,
-                        slidesPerView: 2,
-                    },
-                    900: {
-                        spaceBetween: 60,
-                        slidesPerView: 3,
-                    },
-                }}
-            >
-                {currentMembers.map((member, index) => (
-                    <SwiperSlide key={index}>
-                        <MemberCard
-                            name={member.name}
-                            position={member.position}
-                            imageUrl={member.imageURL}
-                            github={member.github}
-                            linkedIn={member.linkedIn}
-                            insta={member.instagram}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <div  className="w-screen flex items-center justify-center" >
+                <Swiper
+                    breakpoints={{
+                        200: {
+                            // spaceBetween: 60,
+                            slidesPerView: 1,
+                        },
+                        500: {
+                            // spaceBetween: 60,
+                            slidesPerView: 2,
+                        },
+                        900: {
+                            // spaceBetween: 60,
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
+                    {currentMembers.map((member, index) => (
+                        <SwiperSlide key={index}>
+                            <MemberCard
+                                name={member.name}
+                                position={member.position}
+                                imageUrl={member.imageURL}
+                                github={member.github}
+                                linkedIn={member.linkedIn}
+                                insta={member.instagram}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
         </section>
     );
 };
