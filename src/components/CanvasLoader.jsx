@@ -15,9 +15,9 @@ const CanvasLoader = () => {
     >
       <span className='canvas-loader'></span>
       <p
+        className="text-glugBlue"
         style={{
           fontSize: 14,
-          color: "#010C4F",
           fontWeight: 800,
           marginTop: 40,
         }}
