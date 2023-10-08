@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import { useState } from "react";
 import ResourcesPage from "./pages/ResourcesPage";
 import AllProjectsPage from "./pages/AllProjectsPage";
+import AllEvents from "./pages/AllEvents";
 
 function App() {
     const [scrolled, setScrolled] = useState(false);
@@ -20,6 +21,8 @@ function App() {
                 <Route exact path="/alumni" element={<Alumni setScrolled={setScrolled} />} />
                 <Route exact path="/resources" element={<ResourcesPage setScrolled={setScrolled} />} />
                 <Route exact path="/projects" element={<AllProjectsPage setScrolled={setScrolled} />} />
+                <Route exact path="/events" element={<AllEvents setScrolled={setScrolled} />} />
+                
             </Routes>
         </BrowserRouter>
     );

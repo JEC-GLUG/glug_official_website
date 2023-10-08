@@ -13,7 +13,12 @@ const EventsPage = () => {
     >
         
       <div className="timeline-scrollable mb-11">
-        <div className="text-4xl  flex flex-wrap justify-center items-center mb-2"> Event </div> 
+      <div className="w-full flex items-center justify-center relative">
+                <h1 className={`${styles.headingText}`}>
+                    Eve<span className="text-glugBlue">n</span>
+                    ts
+                </h1>
+            </div>
         <VerticalTimeline>
           {eventData.map((event, index) => (
             <VerticalTimelineElement
@@ -32,7 +37,10 @@ const EventsPage = () => {
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
-      
+        <div className="mt-5 relative w-full mx-auto overflow-hidden text-white flex flex-wrap justify-center items-center"><button className="bg-white hover:bg-glugBlue text-glugBlue font-normal hover:text-white py-2 px-4 rounded">
+              View All 
+            </button></div>
+        
       </div>
     </section>
   );

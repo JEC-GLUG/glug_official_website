@@ -1,8 +1,9 @@
 import React from 'react';
-import img1 from '../assets/Glug1.png'
+import img1 from '../assets/Glug1.png';
+
 const Footer = () => {
   return (
-    <footer style={{background:"#060C19"}} className="text-white py-4">
+    <footer style={{ background: "#060C19" }} className="text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img
@@ -15,9 +16,14 @@ const Footer = () => {
             alt="Left Image"
             className="w-10 h-10"
           />
+           <div className="text-left text-sm ml-5"> 
+          <h4 className='font-inter opacity-60'> &#169; Glug, Jorhat Engineering College</h4>
         </div>
-        <div className="text-center">
-          Footer Content Here
+        </div>
+        <div className="text-left text-sm"> 
+          <h4 className='font-inter opacity-60'>Developed By</h4>
+          <p className='font-inter opacity-60'>Vashkarjya Das</p>
+          <p className='font-inter opacity-60'>Zubayer Ahmed Zidhan Laskar</p>
         </div>
       </div>
     </footer>
