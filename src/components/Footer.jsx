@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         </div>
         <div className="text-left text-sm"> 
-          <h4 className='font-inter opacity-60'>Developed By:</h4>
+          <h4 className='font-inter opacity-60 text-xs'>Developed By:</h4>
           <p className='font-inter opacity-60'>Vashkarjya Das</p>
           <p className='font-inter opacity-60'>Zubayer Ahmed Zidhan Laskar</p>
         </div>
