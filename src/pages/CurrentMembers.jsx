@@ -16,6 +16,7 @@ const CurrentMembers = () => {
                     bers
                 </h1>
             </div>
+<<<<<<< HEAD
 
            
 
@@ -57,6 +58,39 @@ const CurrentMembers = () => {
                 </SwiperSlide>
             </Swiper>
             
+=======
+            <div  className="w-screen flex items-center justify-center" >
+                <Swiper
+                    breakpoints={{
+                        200: {
+                            // spaceBetween: 60,
+                            slidesPerView: 1,
+                        },
+                        500: {
+                            // spaceBetween: 60,
+                            slidesPerView: 2,
+                        },
+                        900: {
+                            // spaceBetween: 60,
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
+                    {currentMembers.map((member, index) => (
+                        <SwiperSlide key={index}>
+                            <MemberCard
+                                name={member.name}
+                                position={member.position}
+                                imageUrl={member.imageURL}
+                                github={member.github}
+                                linkedIn={member.linkedIn}
+                                insta={member.instagram}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+>>>>>>> adb41edfd2e1e0e87f77658670087e0b9c372536
         </section>
     );
 };
