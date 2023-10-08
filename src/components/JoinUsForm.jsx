@@ -68,6 +68,7 @@ const JoinUsForm = () => {
                     Department: "",
                     Year: "",
                 });
+                window.open("https://chat.whatsapp.com/GnK1lC0Q6W01Q8o3F4zIOg", "_blank");
             }
         }
     };
