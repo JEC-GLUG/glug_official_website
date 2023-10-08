@@ -1,9 +1,10 @@
 import React from 'react';
 import img1 from '../assets/Glug1.png';
+import { styles } from '../styles';
 
 const Footer = () => {
   return (
-    <footer style={{ background: "#060C19" }} className="text-white py-4">
+    <footer style={{ background: "#060C19" }} className={`text-white py-4 ${styles.paddingX}`} >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img
