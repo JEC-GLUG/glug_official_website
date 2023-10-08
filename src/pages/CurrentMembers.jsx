@@ -16,7 +16,12 @@ const CurrentMembers = () => {
                     bers
                 </h1>
             </div>
-            <Swiper
+
+            <div className= " container bg-slate-100 items-center justify-center">
+
+            
+            
+            <Swiper 
                 breakpoints={{
                     200: {
                         spaceBetween: 60,
@@ -51,6 +56,7 @@ const CurrentMembers = () => {
                     <MemberCard name={"Tilok Doley"} position={"Co-Head"} />
                 </SwiperSlide>
             </Swiper>
+            </div>
         </section>
     );
 };
