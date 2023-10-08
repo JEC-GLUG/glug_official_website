@@ -4,6 +4,7 @@ import { styles } from "../styles";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { currentMembers } from "../constants";
 
 const CurrentMembers = () => {
     return (
@@ -16,49 +17,6 @@ const CurrentMembers = () => {
                     bers
                 </h1>
             </div>
-<<<<<<< HEAD
-
-           
-
-            
-            
-            <Swiper 
-                breakpoints={{
-                    200: {
-                        spaceBetween: 60,
-                        slidesPerView: 1,
-                    },
-                    500: {
-                        spaceBetween: 60,
-                        slidesPerView: 2,
-                    },
-                    900: {
-                        spaceBetween: 60,
-                        slidesPerView: 3,
-                    },
-                }}
-            >
-                <SwiperSlide>
-                    <MemberCard
-                        name={"Sourabh Koch Gohain"}
-                        position={"Head"}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <MemberCard name={"Vaskarjya Das"} position={"Co-Head"} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <MemberCard
-                        name={"Zubayer Ahmed Zidhan"}
-                        position={"Co-Head"}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <MemberCard name={"Tilok Doley"} position={"Co-Head"} />
-                </SwiperSlide>
-            </Swiper>
-            
-=======
             <div  className="w-screen flex items-center justify-center" >
                 <Swiper
                     breakpoints={{
@@ -90,7 +48,6 @@ const CurrentMembers = () => {
                     ))}
                 </Swiper>
             </div>
->>>>>>> adb41edfd2e1e0e87f77658670087e0b9c372536
         </section>
     );
 };
