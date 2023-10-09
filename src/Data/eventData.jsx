@@ -7,7 +7,7 @@ const eventData = [
         date:"October 1, 2023",
     },
     {
-      title: "Github workshop",
+      title: "GitHub Workshop",
       imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696780949/glug/events/gitWorkshop_ut6cns.jpg",
       description:
         "Recently we had organized a hands-on GitHub workshop, imparting valuable skills to juniors. This initiative not only equips aspiring developers with crucial collaborative coding abilities but also fosters a culture of knowledge sharing and teamwork within the college community. By bridging the gap between theory and practical application, GLUG's GitHub session paves the way for a more skilled and cohesive tech ecosystem in our college.",

@@ -81,8 +81,8 @@ const currentMembers = [
     {
         name: "Sourabh Koch Gohain",
         position: "Head",
-        imageURL: "",
-        linkedIn: "#",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/sourav_ckfpy7.jpg",
+        linkedIn: "https://in.linkedin.com/in/saurabh-koch-gohain-1b7511198",
         github: "#",
         instagram: "#",
     },
@@ -105,7 +105,7 @@ const currentMembers = [
     {
         name: "Vaskarjya Das",
         position: "Co-Head",
-        imageURL: "",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/vaskarjya_jt2az6.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -159,14 +159,6 @@ const currentMembers = [
         instagram: "https://instagram.com/_.indrajit?igshid=NGVhN2U2NjQ0Yg==",
     },
     {
-        name: "Meghal Bothra",
-        position: "Core Member",
-        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696689105/glug/meghal_irahlo.jpg",
-        linkedIn: "#",
-        github: "#",
-        instagram: "#",
-    },
-    {
         name: "Mitumoni Kalita",
         position: "Core Member",
         imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696693251/glug/mitumoni_f9zmfd.jpg",
@@ -181,6 +173,22 @@ const currentMembers = [
         linkedIn: "https://www.linkedin.com/in/ritisha-deka-65a1a2225",
         github: "#",
         instagram: "https://instagram.com/__ritss__d?igshid=NzZlODBkYWE4Ng==",
+    },
+    {
+        name: "Simashree Gogoi",
+        position: "Core Member",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/simashree_xjdwml.jpg",
+        linkedIn: "#",
+        github: "#",
+        instagram: "#",
+    },
+    {
+        name: "Meghal Bothra",
+        position: "Core Member",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696689105/glug/meghal_irahlo.jpg",
+        linkedIn: "#",
+        github: "#",
+        instagram: "#",
     },
     {
         name: "Babita Medhi",
@@ -222,14 +230,6 @@ const currentMembers = [
         linkedIn: "#",
         github: "#",
         instagram: "#",
-    },
-    {
-        name: "Name",
-        position: "Core Member",
-        imageURL: "",
-        linkedIn: "",
-        github: "",
-        instagram: "",
     },
 ];
 
