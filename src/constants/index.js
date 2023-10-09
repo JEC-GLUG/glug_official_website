@@ -167,6 +167,14 @@ const currentMembers = [
         instagram: "#",
     },
     {
+        name: "Simashree Gogoi",
+        position: "Core Member",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/simashree_xjdwml.jpg",
+        linkedIn: "#",
+        github: "#",
+        instagram: "https://www.instagram.com/___simmmm___/",
+    },
+    {
         name: "Ritisha Deka",
         position: "Core Member",
         imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696782547/glug/ritisha_has4ho.jpg",
@@ -174,14 +182,7 @@ const currentMembers = [
         github: "#",
         instagram: "https://instagram.com/__ritss__d?igshid=NzZlODBkYWE4Ng==",
     },
-    {
-        name: "Simashree Gogoi",
-        position: "Core Member",
-        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/simashree_xjdwml.jpg",
-        linkedIn: "#",
-        github: "#",
-        instagram: "#",
-    },
+    
     {
         name: "Meghal Bothra",
         position: "Core Member",
