@@ -81,7 +81,7 @@ const currentMembers = [
     {
         name: "Sourabh Koch Gohain",
         position: "Head",
-        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/sourav_ckfpy7.jpg",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696850029/glug/sourabh_gaqfsi.jpg",
         linkedIn: "https://in.linkedin.com/in/saurabh-koch-gohain-1b7511198",
         github: "#",
         instagram: "#",

@@ -44,32 +44,48 @@ const JoinUsForm = () => {
     // Handle Form Submission
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
 
-        const apiURL = import.meta.env.VITE_FORM_URL;
+        // Code to accept forms
+        // Also deploy script and add API to .env
+        // const apiURL = import.meta.env.VITE_FORM_URL;
 
         const values = Object.values(userData);
         if (values.includes("")) {
+            // If fields are empty
             setAlertType({ type: "warning", open: true, message: "Please fill out the form before submitting." });
         } else {
-            const response = await fetch(apiURL, {
-                method: "POST",
-                redirect: "follow",
-                headers: {
-                    "Content-Type": "text/plain;charset=utf-8",
-                },
-                body: JSON.stringify(userData),
+
+
+            // Currently Not Accepting Forms
+            setAlertType({ type: "info", open: true, message: "Sorry! We are currently not accepting requests." });
+            setUserData({
+                Name: "",
+                Email: "",
+                Department: "",
+                Year: "",
             });
-            if (response.ok) {
-                // Form submitted successfully
-                setAlertType({ type: "success", open: true, message: "Your response has been recorded." });
-                setUserData({
-                    Name: "",
-                    Email: "",
-                    Department: "",
-                    Year: "",
-                });
-                window.open("https://chat.whatsapp.com/GnK1lC0Q6W01Q8o3F4zIOg", "_blank");
-            }
+
+            // To Accept Forms uncomment below and add apiURL
+            // const response = await fetch(apiURL, {
+            //     method: "POST",
+            //     redirect: "follow",
+            //     headers: {
+            //         "Content-Type": "text/plain;charset=utf-8",
+            //     },
+            //     body: JSON.stringify(userData),
+            // });
+            // if (response.ok) {
+            // // Form submitted successfully
+            //     setAlertType({ type: "success", open: true, message: "Your response has been recorded." });
+                // setUserData({
+                //     Name: "",
+                //     Email: "",
+                //     Department: "",
+                //     Year: "",
+                // });
+            //     window.open("https://chat.whatsapp.com/GnK1lC0Q6W01Q8o3F4zIOg", "_blank");
+            // }
         }
     };
 
