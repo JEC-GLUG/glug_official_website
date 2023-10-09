@@ -1,14 +1,14 @@
 
 // ******  Navigation Links  ****** 
 const navLinks = [
-    {
-        id: "/resources",
-        title: "Resources",
-    },
-    {
-        id: "/projects",
-        title: "Projects",
-    },
+    // {
+    //     id: "/resources",
+    //     title: "Resources",
+    // },
+    // {
+    //     id: "/projects",
+    //     title: "Projects",
+    // },
     {
         id: "/alumni",
         title: "Alumni",
@@ -182,7 +182,14 @@ const currentMembers = [
         github: "#",
         instagram: "https://instagram.com/__ritss__d?igshid=NzZlODBkYWE4Ng==",
     },
-    
+    {
+        name: "Apekshya Bharadwaj",
+        position: "Core Member",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696847200/glug/apekshya_crhdjs.jpg",
+        linkedIn: "#",
+        github: "#",
+        instagram: "https://instagram.com/a_pekshya_",
+    },
     {
         name: "Meghal Bothra",
         position: "Core Member",
@@ -197,6 +204,14 @@ const currentMembers = [
         imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696782548/glug/babita_sk53b0.jpg",
         linkedIn: "https://www.linkedin.com/in/babita-medhi",
         github: "https://github.com/babitamedhi",
+        instagram: "#",
+    },
+    {
+        name: "Subham Banik",
+        position: "Core Member",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696847200/glug/subham_banik_aj8bbg.jpg",
+        linkedIn: "https://www.linkedin.com/in/subham-banik-0ba197220",
+        github: "#",
         instagram: "#",
     },
     {
