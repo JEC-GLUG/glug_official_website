@@ -105,7 +105,7 @@ const currentMembers = [
     {
         name: "Vaskarjya Das",
         position: "Co-Head",
-        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696789108/glug/vaskarjya_jt2az6.jpg",
+        imageURL: "https://res.cloudinary.com/drjsf5wip/image/upload/v1696846042/glug/vd_ll9g4v.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",

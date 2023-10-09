@@ -51,7 +51,7 @@ const MemberCard = ({ name, position, imageUrl, github, linkedIn, insta }) => {
                     <IconButton size="lg" variant="plain" color="neutral">
                         <a
                             href={github}
-                            target="_blank"
+                            target= {(github === "#") ? "_self" : "_blank"}
                             rel="noopener noreferrer"
                         >
                             <SvgIcon>
@@ -74,7 +74,7 @@ const MemberCard = ({ name, position, imageUrl, github, linkedIn, insta }) => {
                     <IconButton size="lg" variant="plain" color="neutral">
                         <a
                             href={insta}
-                            target="_blank"
+                            target= {(insta === "#") ? "_self" : "_blank"}
                             rel="noopener noreferrer"
                         >
                             <SvgIcon>
@@ -99,7 +99,7 @@ const MemberCard = ({ name, position, imageUrl, github, linkedIn, insta }) => {
                     <IconButton size="lg" variant="plain" color="neutral">
                         <a
                             href={linkedIn}
-                            target="_blank"
+                            target= {(linkedIn === "#") ? "_self" : "_blank"}
                             rel="noopener noreferrer"
                         >
                             <SvgIcon>
