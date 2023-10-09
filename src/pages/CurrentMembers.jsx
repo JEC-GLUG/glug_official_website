@@ -17,7 +17,7 @@ const CurrentMembers = () => {
                     bers
                 </h1>
             </div>
-            <div  className="w-screen flex items-center justify-center" >
+            <div  className="w-screen flex items-center justify-center xl:ml-10 " >
                 <Swiper
                     breakpoints={{
                         200: {
