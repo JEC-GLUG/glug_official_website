@@ -1,17 +1,33 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import GlugCanvas from "./canvas/Glug";
+import React, { useState, useEffect } from "react";
 
 const Hero = () => {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 767);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <section
             id="hero"
             className={`relative w-full h-screen mx-auto overflow-hidden`}
         >
             <motion.div
-                initial={{ x: "-100%" }}
+                initial={{ x: isMobile ? 0 : "-100%" }}
                 animate={{ x: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 1.2, delay: 0.9 }}
                 className={`flex flex-wrap-reverse w-full h-screen mx-auto ${styles.paddingX} md:py-[5rem] pb-[5rem]`}
             >
                 {/* <!-----------------  LEFT COLUMN  -----------------> */}
@@ -45,9 +61,9 @@ const Hero = () => {
 
                 {/* <!-----------------  RIGHT COLUMN  -----------------> */}
                 <motion.div
-                    initial={{ x: "1000%" }}
+                    initial={isMobile ? { x: 0 } : { x: "1000%" }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 1.6, delay: 0.1 }}
+                    transition={{ duration: 1.2, delay: 0.8 }}
                     className="w-full md:w-1/2 flex flex-col justify-center"
                 >
                     <div className="w-full h-full">
