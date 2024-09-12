@@ -13,8 +13,8 @@ const CurrentMembers = () => {
         >
             <div className="w-full flex items-center justify-center relative">
                 <h1 className={`${styles.headingText}`}>
-                    Current Me<span className="text-glugBlue">m</span>
-                    bers
+                     {/* Current Me<span className="text-glugBlue">m</span>
+                     bers */}
                 </h1>
             </div>
             <div  className="w-screen flex items-center justify-center xl:ml-10 " >

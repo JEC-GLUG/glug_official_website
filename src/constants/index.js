@@ -12,6 +12,11 @@ const navLinks = [
     {
         id: "/alumni",
         title: "Alumni",
+        
+    },
+    {
+        id: "/members",
+        title: "Member",
     },
 ];
 

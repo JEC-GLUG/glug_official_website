@@ -1,8 +1,8 @@
 import React from 'react';
-import { BiLogoLinkedin, BiLogoFacebookCircle, BiLogoInstagram } from 'react-icons/bi';
+import { BiLogoLinkedin, BiLogoGithub, BiLogoInstagram } from 'react-icons/bi';
 import './AluCard.css';
 
-const AluCard = ({ name, profilePhoto }) => {
+const AluCard = ({ name, position, profilePhoto, linkedIn, github, instagram }) => {
   const [iconHovered, setIconHovered] = React.useState(false);
 
   const handleIconHover = () => {
@@ -11,6 +11,12 @@ const AluCard = ({ name, profilePhoto }) => {
 
   const handleIconUnhover = () => {
     setIconHovered(false);
+  };
+
+  const handleIconClick = (url) => {
+    if (url && url !== "#") {
+      window.open(url, "_blank");
+    }
   };
 
   return (
@@ -22,33 +28,36 @@ const AluCard = ({ name, profilePhoto }) => {
             <img src={profilePhoto} alt="Profile" className="w-full h-auto" />
           </div>
           <div className="w-2/3">
-            {/* Name */}
+            {/* Name and Position */}
             <h2 className="text-xl font-russo mb-2 Name">{name}</h2>
+            {position && <p className="text-sm text-gray-400">{position}</p>}
 
             {/* Icons */}
             <div className="flex items-center">
               <span className="mr-20 mt-4">
                 <BiLogoLinkedin
-                  style={{ color: '#0077B5' }}
-                  className="fas fa-envelope icon-hover"
+                  style={{ color: '#0077B5', cursor: linkedIn ? 'pointer' : 'default', fontSize: '24px' }}
                   onMouseEnter={handleIconHover}
                   onMouseLeave={handleIconUnhover}
+                  onClick={() => handleIconClick(linkedIn)}
                 />
               </span>
-              <span className="mr-20  mt-4">
-                <BiLogoFacebookCircle
-                  style={{ color: '#0077B5' }}
-                  className="fas fa-envelope icon-hover"
+
+              <span className="mr-20 mt-4">
+                <BiLogoGithub
+                  style={{ color: '#000', cursor: github ? 'pointer' : 'default', fontSize: '26px', fontWeight: 'bold' }}
                   onMouseEnter={handleIconHover}
                   onMouseLeave={handleIconUnhover}
+                  onClick={() => handleIconClick(github)}
                 />
               </span>
-              <span className="mr-6  mt-4">
+
+              <span className="mr-6 mt-4">
                 <BiLogoInstagram
-                  style={{ color: '#0077B5' }}
-                  className="fas fa-envelope icon-hover"
+                  style={{ color: '#E4405F', cursor: instagram ? 'pointer' : 'default', fontSize: '24px' }}
                   onMouseEnter={handleIconHover}
                   onMouseLeave={handleIconUnhover}
+                  onClick={() => handleIconClick(instagram)}
                 />
               </span>
             </div>
@@ -60,4 +69,3 @@ const AluCard = ({ name, profilePhoto }) => {
 };
 
 export default AluCard;
-
