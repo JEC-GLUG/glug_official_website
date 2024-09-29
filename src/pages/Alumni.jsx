@@ -69,6 +69,174 @@ const alumniData = [
       },
     ],
   },
+  {
+    batch: "Batch 2019-23",
+    alumni: [
+      {
+        name: "Himraj Gogoi",
+        position: "Head",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/himraj-gogoi",
+        github: "#",
+        instagram: "https://instagram.com/himraj_gogoi_?igshid=MzMyNGUyNmU2YQ==",
+      },
+      {
+        name: "Debashish Gogoi",
+        position: "Co Head",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/debashish-gogoi-devzard",
+        github: "#",
+        instagram: "https://www.instagram.com/debashish_gogoi_/",
+      },
+      {
+        name: "Rupam Jyoti Das",
+        position: "Co Head",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/rupam-jyoti-das-218a521a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "#",
+        instagram: "https://instagram.com/rupamj_das?igshid=YTQwZjQ0NmI0OA==",
+      },
+      {
+        name: "Arif Alam",
+        position: "Core Member",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/rokerzsa",
+        github: "#",
+        instagram: "https://www.instagram.com/rokerzsa/",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2018-22",
+    alumni: [
+      {
+        name: "Aritra Kaushik",
+        position: "Co Head",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/aritra-k-414879134?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "#",
+        instagram: "#",
+      },
+      {
+        name: "Bhaskar Jyoti Bhattacharya",
+        position: "Co Head",
+        profilePhoto: "#",
+        linkedIn: "#",
+        github: "#",
+        instagram: "#",
+      },
+      {
+        name: "Pijush Bhuyan",
+        position: "Co Head",
+        profilePhoto: "#",
+        linkedIn: "",
+        github: "#",
+        instagram: "#",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2017-21",
+    alumni: [
+      {
+        name: "Arindam Basistha",
+        position: "Co Head",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/arindam-basistha-62652616a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "#",
+        instagram: "https://instagram.com/aritrakaushik?igshid=OGQ5ZDc2ODk2ZA==",
+      },
+      {
+        name: "Sourav Mazumdar",
+        position: "Core member",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/souravmzdr",
+        github: "#",
+        instagram: "#",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2016-20",
+    alumni: [
+      {
+        name: "Uddipta Sarma",
+        position: "Core member",
+        profilePhoto: "#",
+        linkedIn: "#",
+        github: "#",
+        instagram: "#",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2015-19",
+    alumni: [
+      {
+        name: "Rishav Sharma",
+        position: "Core member",
+        profilePhoto: "#",
+        linkedIn: "https://in.linkedin.com/in/srishav9",
+        github: "#",
+        instagram: "https://instagram.com/srishav26?igshid=OGQ5ZDc2ODk2ZA==",
+      },
+      {
+        name: "Shyam Prasad",
+        position: "Core member",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/shyam-prasad-b36320167?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "#",
+        instagram: "https://instagram.com/shyam_7781?igshid=OGQ5ZDc2ODk2ZA==",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2014-18",
+    alumni: [
+      {
+        name: "Bijit Goswami",
+        position: "Core member",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/bijit-goswami-8113b2120?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        github: "#",
+        instagram: "https://instagram.com/bijit_goswami?igshid=OGQ5ZDc2ODk2ZA==",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2012-16",
+    alumni: [
+      {
+        name: "Akhil Rajbongshi",
+        position: "Core member",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/akhil-rajbongshi-003959147?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "#",
+        instagram: "https://instagram.com/rajbongshiakhil?igshid=MzMyNGUyNmU2YQ==",
+      },
+    ]
+  },
+  {
+    batch: "Batch 2011-15",
+    alumni: [
+      {
+        name: "Nashreen Sultana",
+        position: "Founding team",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/nashreen-sultana",
+        github: "#",
+        instagram: "https://instagram.com/rajbongshiakhil?igshid=MzMyNGUyNmU2YQ==",
+      },
+      {
+        name: "Rajashree Bora",
+        position: "Founding team",
+        profilePhoto: "#",
+        linkedIn: "https://www.linkedin.com/in/rajashree-bora-b430a298",
+        github: "",
+        instagram: "https://instagram.com/rajashree0411",
+      },
+    ]
+  },
 ];
 
 const Alumni = () => {
