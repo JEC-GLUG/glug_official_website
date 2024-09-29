@@ -6,10 +6,10 @@ const MemCard = ({ name, position, profilePhoto, linkedIn, github, instagram }) 
   return (
     <div className="text-white mt-10">
       <div style={{ background: "rgba(70, 81, 98, 0.4)" }} className="rounded-md p-3 max-w-md w-96">
-        <div className="flex">
+        <div className="flex" style={{ height: "8rem", alignItems: "center" }}>
           {/* Profile Photo */}
-          <div className="w-1/4 pr-4 ProfilePhoto">
-            <img src={profilePhoto} alt="Profile" className="w-full h-auto" />
+          <div className="w-1/4 ProfilePhoto">
+            <img src={profilePhoto} alt="Profile" className="w-full h-auto"/>
           </div>
 
           {/* Name, Position, and Social Icons */}

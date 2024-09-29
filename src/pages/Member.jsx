@@ -34,7 +34,7 @@ const MemberData = [
       {
         name: "Ishan Bharadwaj",
         position: "Co-Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727643618/Ishan-Bharadwaj.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -50,7 +50,7 @@ const MemberData = [
       {
         name: "Abhilash Kashyap",
         position:"Technical Lead",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727643665/Abhilash-Kashyap.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -64,9 +64,9 @@ const MemberData = [
         instagram: "#",
       },
       {
-        name: "Asish saikia",
+        name: "Ashish saikia",
         position:"Event Coordinator",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727643546/Ashish-Saikia.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -74,7 +74,7 @@ const MemberData = [
       {
         name: "Prabal Barman",
         position:"Event Coordinator",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727643849/Prabal-Barman.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -82,7 +82,7 @@ const MemberData = [
       {
         name: "Sampriti Kalita",
         position:"Event Coordinator",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727643904/Sampriti-Kalita.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -98,7 +98,7 @@ const MemberData = [
       {
         name: "Shaswata Gogoi",
         position:"Website Manager",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727643965/Shaswata-Gogoi.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -106,7 +106,7 @@ const MemberData = [
       {
         name: "Sourav Kumar Barman",
         position:"Website Manager",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644008/Sourav-Kumar-Barman.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -114,7 +114,7 @@ const MemberData = [
       {
         name: "Reetam Borgohain",
         position:"Content Manager",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644045/Reetam-Borgohain.png",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -122,7 +122,7 @@ const MemberData = [
       {
         name: "Rajdeep Gogoi",
         position:"Content Manager",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644083/Rajdeep-Gogoi.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -130,7 +130,7 @@ const MemberData = [
       {
         name: "Dorothy Gogoi",
         position:"Social Media Manager",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644189/Dorothy-Gogoi.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -138,7 +138,7 @@ const MemberData = [
       {
         name: "Rituraj Bora",
         position:"Social Media Manager",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644226/Rituraj-Bora.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -189,15 +189,15 @@ const MemberData = [
       {
         name: "Rohan Kayastha Kaluwar",
         position:"Core Team Member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644254/Rohan-Kayasthya.png",
         linkedIn: "#",
         github: "#",
         instagram: "#",
       },
       {
-        name: "Samar Jyoti Kashyap",
+        name: "Sameer Jyoti Kashyap",
         position:"Core Team Member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644268/Sameer-Kashyap.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -205,7 +205,7 @@ const MemberData = [
       {
         name: "Ashrita Lahon",
         position:"Core Team Member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644390/Ashrita-Lahon-2.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -213,7 +213,7 @@ const MemberData = [
       {
         name: "Manash Khatowai",
         position:"Core Team Member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644322/Manash-Khotowal.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -221,7 +221,7 @@ const MemberData = [
       {
         name: "Syed Tasdeeque Ruhani",
         position:"Core Team Member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644428/Tasdeeque-Ruhani.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -229,7 +229,7 @@ const MemberData = [
       {
         name: "Anurag Rajbongshi",
         position:"Core Team Member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644442/Anurag-Rajbonshi.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",

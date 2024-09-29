@@ -75,7 +75,7 @@ const alumniData = [
       {
         name: "Himraj Gogoi",
         position: "Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/himraj-gogoi",
         github: "#",
         instagram: "https://instagram.com/himraj_gogoi_?igshid=MzMyNGUyNmU2YQ==",
@@ -83,7 +83,7 @@ const alumniData = [
       {
         name: "Debashish Gogoi",
         position: "Co Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/debashish-gogoi-devzard",
         github: "#",
         instagram: "https://www.instagram.com/debashish_gogoi_/",
@@ -91,15 +91,15 @@ const alumniData = [
       {
         name: "Rupam Jyoti Das",
         position: "Co Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/rupam-jyoti-das-218a521a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "#",
         instagram: "https://instagram.com/rupamj_das?igshid=YTQwZjQ0NmI0OA==",
       },
       {
         name: "Arif Alam",
-        position: "Core Member",
-        profilePhoto: "#",
+        position: "Core member",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/rokerzsa",
         github: "#",
         instagram: "https://www.instagram.com/rokerzsa/",
@@ -112,7 +112,7 @@ const alumniData = [
       {
         name: "Aritra Kaushik",
         position: "Co Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/aritra-k-414879134?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "#",
         instagram: "#",
@@ -120,7 +120,7 @@ const alumniData = [
       {
         name: "Bhaskar Jyoti Bhattacharya",
         position: "Co Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -128,7 +128,7 @@ const alumniData = [
       {
         name: "Pijush Bhuyan",
         position: "Co Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "",
         github: "#",
         instagram: "#",
@@ -141,7 +141,7 @@ const alumniData = [
       {
         name: "Arindam Basistha",
         position: "Co Head",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/arindam-basistha-62652616a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "#",
         instagram: "https://instagram.com/aritrakaushik?igshid=OGQ5ZDc2ODk2ZA==",
@@ -149,7 +149,7 @@ const alumniData = [
       {
         name: "Sourav Mazumdar",
         position: "Core member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/souravmzdr",
         github: "#",
         instagram: "#",
@@ -162,7 +162,7 @@ const alumniData = [
       {
         name: "Uddipta Sarma",
         position: "Core member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "#",
         github: "#",
         instagram: "#",
@@ -175,7 +175,7 @@ const alumniData = [
       {
         name: "Rishav Sharma",
         position: "Core member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://in.linkedin.com/in/srishav9",
         github: "#",
         instagram: "https://instagram.com/srishav26?igshid=OGQ5ZDc2ODk2ZA==",
@@ -183,7 +183,7 @@ const alumniData = [
       {
         name: "Shyam Prasad",
         position: "Core member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/shyam-prasad-b36320167?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "#",
         instagram: "https://instagram.com/shyam_7781?igshid=OGQ5ZDc2ODk2ZA==",
@@ -196,7 +196,7 @@ const alumniData = [
       {
         name: "Bijit Goswami",
         position: "Core member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/bijit-goswami-8113b2120?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         github: "#",
         instagram: "https://instagram.com/bijit_goswami?igshid=OGQ5ZDc2ODk2ZA==",
@@ -209,7 +209,7 @@ const alumniData = [
       {
         name: "Akhil Rajbongshi",
         position: "Core member",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/akhil-rajbongshi-003959147?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "#",
         instagram: "https://instagram.com/rajbongshiakhil?igshid=MzMyNGUyNmU2YQ==",
@@ -222,7 +222,7 @@ const alumniData = [
       {
         name: "Nashreen Sultana",
         position: "Founding team",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/nashreen-sultana",
         github: "#",
         instagram: "https://instagram.com/rajbongshiakhil?igshid=MzMyNGUyNmU2YQ==",
@@ -230,7 +230,7 @@ const alumniData = [
       {
         name: "Rajashree Bora",
         position: "Founding team",
-        profilePhoto: "#",
+        profilePhoto: "https://res.cloudinary.com/doyqt2baz/image/upload/v1727644483/Stock-Empty-Image.jpg",
         linkedIn: "https://www.linkedin.com/in/rajashree-bora-b430a298",
         github: "",
         instagram: "https://instagram.com/rajashree0411",
@@ -252,7 +252,7 @@ const Alumni = () => {
           </div>
           <div className="container">
             {alumniData.map((batch, batchIndex) => (
-              <div key={batchIndex} className="mt-5">
+              <div key={batchIndex} className="mt-5 mb-10">
                 <div className="batch text-lg text-white">{batch.batch}</div>
                 <div className="Cards grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
                   {batch.alumni.map((alumni, alumniIndex) => (
